@@ -80,7 +80,7 @@ void Condition::readDataFile(std::string path) {
   std::regex re("\\(.*\\)");          // For removing (**)
   std::regex re2("-+\\w+-+");         // For removing like --**--
   while(getline(ifs, tmp_str)) {
-    if(tmp_str.empty()) continue;
+	if(tmp_str.empty() || tmp_str.length() <= 1) continue;
     std::stringstream ss;
     ss.str(tmp_str);
     std::string item, value;

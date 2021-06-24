@@ -5,6 +5,10 @@
 #include <cmath>
 #include <Eigen/LU>
 
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
+
 namespace my_mps{
 
 BubbleParticles::BubbleParticles(const std::string& path, const tiny_mps::Condition& condition)
