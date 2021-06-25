@@ -21,7 +21,13 @@ CXX := g++
 DEBUGS := -O3
 CXXFLAGS := $(DEBUGS) -std=c++11 -Wall -Wextra -MP -MMD
 CPPFLAGS := -I $(INCLUDE_DIR)
+
+ifeq ($(voro),yes)
 LDFLAGS  := -Wl,--no-as-needed -Llib -lstdc++ -lm -lvoro++ -lvoroGmsh
+else
+LDFLAGS  := -Llib -lstdc++ -lm
+endif
+
 
 MKDIR := mkdir -p
 MV := mv -f
