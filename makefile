@@ -12,7 +12,7 @@ BINARY_DIR := bin
 SOURCE_DIR := src
 OBJECT_DIR := obj
 OBJECT_LIB_DIR := $(OBJECT_DIR)/lib
-INCLUDE_DIR := include
+INCLUDE_DIR := include -Iinclude/voroGmsh
 TARGET_DIR := examples
 TARGET := $(wildcard $(TARGET_DIR)/*.cpp)
 
@@ -21,6 +21,7 @@ CXX := g++
 DEBUGS := -O3
 CXXFLAGS := $(DEBUGS) -std=c++11 -Wall -Wextra -MP -MMD
 CPPFLAGS := -I $(INCLUDE_DIR)
+LDFLAGS  := -Wl,--no-as-needed -Llib -lstdc++ -lm -lvoro++ -lvoroGmsh
 
 MKDIR := mkdir -p
 MV := mv -f
