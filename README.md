@@ -94,6 +94,12 @@ To beign, you should edit the file `config.mk` using a text editor. Make the fol
 PREFIX=build
 ```
 
+Go to the folder `voro` with the comand
+
+```bash
+cd voro
+```
+
 Create a new folder called `build`. Do the command
 
 ```bash
