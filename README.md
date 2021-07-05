@@ -53,10 +53,18 @@ To run an example, first create a folder called `output`. Do the command
 mkdir output
 ```
 
-Run an executable, e.g.
+Run an executable, e.g. 
+
+Using **Windows**
 
 ```bash
-./bin/standard_mps.exe
+.\bin\standard_mps.exe
+```
+
+Using **Linux**
+
+```bash
+./bin/standard_mps
 ```
 
 It should start the program and print something like:
