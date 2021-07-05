@@ -144,7 +144,7 @@ https://gmsh.info/
 Gmsh will be used to verify the voronoi geometries (.geo).
 
 ## voroGmsh
-Clone the voroGmsh repository into your system. Enter the following command
+Out of the folders `TinyMPS` and `voro`, clone the voroGmsh repository into your system. Enter the following command
 
 ```bash
 git clone https://github.com/DorianDepriester/voroGmsh.git
