@@ -233,7 +233,21 @@ make
 
 After the inclusion of the libraries Voro++ and voroGmsh following the previous instructons, you can compile tinyMPS with voro++. 
 
-To do that, go to the folder `TinyMPS` and make sure that the environment is clean
+To do that, go to the folder `TinyMPS/include` and create a folder called `voroGmsh`
+
+```bash
+mkdir voroGmsh
+```
+
+Copy all files with extension ".hh" from the folder `voroGmsh/include` to the folder `TinyMPS/include`.
+
+Go out of the folder `TinyMPS/include` with the comand
+
+```bash
+cd ..
+```
+
+Now, in the folder `TinyMPS`, make sure that the environment is clean
 
 ```bash
 make clean
