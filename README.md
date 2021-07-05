@@ -158,7 +158,7 @@ go to the folder `voroGmsh` with the command
 cd voroGmsh
 ```
 
-Create new folders called `src` and `include`. Do the commands
+Create new folders called `src`, `include` and `lib`. Do the commands
 
 ```bash
 mkdir src
@@ -166,6 +166,10 @@ mkdir src
 
 ```bash
 mkdir include
+```
+
+```bash
+mkdir lib
 ```
 
 Move the file `vorogmsh.h` to the folder `include` and move the file `vorogmsh.cpp` to the folder `src`.
@@ -195,15 +199,11 @@ After that, copy the file `adjacencyMatrix.h` to the folder `include` in the vor
 It is necessary to add all the header files (.hh) from voro++ to voroGmsh.
 Copy all files with extension ".hh" from the folder `voro/src` to the folder `include` in the voroGmsh directory.
 
-The makefile we provide here (look in the folder `TinyMPS/VORO_MAKEFILE`) can generate static library (.a), shared library (.dll) or an executable (.exe) .
+The makefile we provide here (look in the folder `TinyMPS/VORO_MAKEFILE`) can generate shared library (.dll), static library (.a) or an executable (.exe) .
 
 Edit the Makefile file (if necessary) with a text editor.
 
-To create the static library **libvoroGmsh.a**, go to the folder `voroGmsh` and enter the command
-
-```bash
-make static
-```
+Copy the file **libvoroGmsh.dll** from the folder `voro/build` to the folder `lib` in the voroGmsh directory.
 
 To create the shared library **libvoroGmsh.dll**, go to the folder `voroGmsh` and enter the command
 
@@ -211,21 +211,19 @@ To create the shared library **libvoroGmsh.dll**, go to the folder `voroGmsh` an
 make shared
 ```
 
-To create the executable **voroGmsh.exe**, first, create new folder called `lib` with the commands
+Copy the file **libvoro++.dll** from the folder `voroGmsh` to the folder `lib` in the TinyMPS directory.
+
+(**OPTIONAL**) To create the static library **libvoroGmsh.a**, go to the folder `voroGmsh` and enter the command
 
 ```bash
-mkdir lib
+make static
 ```
 
-Copy the file **libvoroGmsh.dll** from the folder `voro/build` to the folder `lib` in the voroGmsh directory.
-
-Go to the folder `voroGmsh` and enter the comand
+(**OPTIONAL**) To create the executable **voroGmsh.exe**, go to the folder `voroGmsh` and enter the comand
 
 ```bash
 make
 ```
-
-Copy the file **libvoro++.dll** from the folder `voroGmsh` to the folder `lib` in the TinyMPS directory.
 
 ## TinyMPS + Voro++
 
