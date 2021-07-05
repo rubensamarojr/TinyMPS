@@ -61,7 +61,7 @@ $(OBJECT_DIR)/%.o: $(TARGET_DIR)/%.cpp
 
 .PHONY: clean
 clean:
-	$(RM) $(OBJECT_DIR) $(BINARY_DIR)
+	$(RM) $(OBJECT_DIR) $(BINARY_DIR)/*.exe
 
 ifneq "$(MAKECMDGOALS)" "clean"
 	-include $(dependencies)
