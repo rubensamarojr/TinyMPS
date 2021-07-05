@@ -239,7 +239,7 @@ To do that, go to the folder `TinyMPS/include` and create a folder called `voroG
 mkdir voroGmsh
 ```
 
-Copy all files with extension ".hh" from the folder `voroGmsh/include` to the folder `TinyMPS/include`.
+Copy all files with extension ".hh" from the folder `voroGmsh/include` to the folder `TinyMPS/include/voroGmsh`.
 
 Go out of the folder `TinyMPS/include` with the comand
 
