@@ -126,6 +126,8 @@ make all
 
 This should create several binary executables (.exe) in folders inside the folder examples. Also, the libraries **libvoro++.dll** and **libvoro++.dll.a** are created in the current folder build.
 
+Copy the file **libvoro++.dll** from the folder `voro/build` to the folder `lib` in the TinyMPS directory.
+
 ## GMSH
 
 Download the Gmsh from
@@ -134,12 +136,6 @@ https://gmsh.info/
 Gmsh will be used to verify the voronoi geometries (.geo).
 
 ## voroGmsh
-Go out of the folder `TinyMPS` with the comand
-
-```bash
-cd ..
-```
-
 Clone the voroGmsh repository into your system. Enter the following command
 
 ```bash
@@ -199,16 +195,40 @@ To create the static library **libvoroGmsh.a**, enter the command
 make static
 ```
 
+To create the shared library **libvoroGmsh.dll**, enter the command
+
+```bash
+make shared
+```
+
 To create the executable **voroGmsh.exe**, first, create new folder called `lib` with the commands
 
 ```bash
 mkdir lib
 ```
 
-Copy the file **libvoro++.dll** from the folder `voro/build` to the folder `lib` in the voroGmsh directory.
+Copy the file **libvoroGmsh.dll** from the folder `voro/build` to the folder `lib` in the voroGmsh directory.
 
 Enter the comand
 
 ```bash
 make
+```
+
+Copy the file **libvoro++.dll** from the folder `voroGmsh` to the folder `lib` in the TinyMPS directory.
+
+## TinyMPS + Voro++
+
+After the inclusion of the libraries Voro++ and voroGmsh following the previous instructons, you can compile tinyMPS with voro++. 
+
+To do that, go to the folder `TinyMPS` and make sure that the environment is clean
+
+```bash
+make clean
+```
+
+Execute the following command
+
+```bash
+make voro=yes
 ```
