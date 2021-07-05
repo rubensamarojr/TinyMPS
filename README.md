@@ -134,6 +134,8 @@ make all
 
 This should create several binary executables (.exe) in folders inside the folder examples. Also, the libraries **libvoro++.dll** and **libvoro++.dll.a** are created in the current folder build.
 
+Go to the folder `TinyMPS`, and create a folder called `lib`.
+
 Copy the file **libvoro++.dll** from the folder `voro/build` to the folder `lib` in the TinyMPS directory.
 
 ## GMSH
