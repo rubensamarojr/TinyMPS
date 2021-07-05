@@ -123,7 +123,7 @@ cd build
 Execute cmake to generate the makefile. Do the command
 
 ```bash
-cmake -G "Unix Makefiles" ..
+cmake -G "Unix Makefiles" -DBUILD_SHARED_LIBS=ON ..
 ```
 
 Execute make by the following command
