@@ -203,7 +203,7 @@ The makefile we provide here (look in the folder `TinyMPS/VORO_MAKEFILE`) can ge
 
 Edit the Makefile file (if necessary) with a text editor.
 
-Copy the file **libvoroGmsh.dll** from the folder `voro/build` to the folder `lib` in the voroGmsh directory.
+Copy the file **libvoro++.dll** from the folder `voro/build` to the folder `lib` in the voroGmsh directory.
 
 To create the shared library **libvoroGmsh.dll**, go to the folder `voroGmsh` and enter the command
 
@@ -211,15 +211,19 @@ To create the shared library **libvoroGmsh.dll**, go to the folder `voroGmsh` an
 make shared
 ```
 
-Copy the file **libvoro++.dll** from the folder `voroGmsh` to the folder `lib` in the TinyMPS directory.
+Finally, copy the file **libvoroGmsh.dll** from the folder `voroGmsh` to the folder `lib` in the TinyMPS directory.
 
-(**OPTIONAL**) To create the static library **libvoroGmsh.a**, go to the folder `voroGmsh` and enter the command
+(**OPTIONAL**) 
+
+To create the static library **libvoroGmsh.a**, go to the folder `voroGmsh` and enter the command
 
 ```bash
 make static
 ```
 
-(**OPTIONAL**) To create the executable **voroGmsh.exe**, go to the folder `voroGmsh` and enter the comand
+(**OPTIONAL**) 
+
+To create the executable **voroGmsh.exe**, go to the folder `voroGmsh` and enter the comand
 
 ```bash
 make
