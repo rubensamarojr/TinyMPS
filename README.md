@@ -241,12 +241,6 @@ mkdir voroGmsh
 
 Copy all files with extension ".hh" from the folder `voroGmsh/include` to the folder `TinyMPS/include/voroGmsh`.
 
-Go out of the folder `TinyMPS/include` with the comand
-
-```bash
-cd ..
-```
-
 Now, in the folder `TinyMPS`, make sure that the environment is clean
 
 ```bash
