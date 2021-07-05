@@ -185,7 +185,7 @@ After that, copy the file `adjacencyMatrix.h` to the folder `include` in the vor
 It is necessary to add all the header files (.hh) from voro++ to voroGmsh.
 Copy all files with extension ".hh" from the folder `voro/src` to the folder `include` in the voroGmsh directory.
 
-The makefile we provide here (look in the folder `VORO_MAKEFILE`) can generate an executable (.exe) or static library (.a).
+The makefile we provide here (look in the folder `VORO_MAKEFILE`) can generate static library (.a), shared library (.dll) or an executable (.exe) .
 
 Edit the Makefile file (if necessary) with a text editor.
 
