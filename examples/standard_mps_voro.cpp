@@ -10,7 +10,7 @@
 #include "voro++.hh"
 #include "vorogmsh.h"
 
-#include <delaunator-header-only.hpp>
+// #include <delaunator-header-only.hpp>
 
 
 // Set up constants for the container geometry
@@ -24,23 +24,24 @@ const int n_x=3,n_y=3,n_z=3;
 // Sample code using TinyMPS library.
 int main(int argc, char* argv[])
 {
-	/* x0, y0, x1, y1, ... */
-    std::vector<double> coords = {-1, 1, 1, 1, 1, -1, -1, -1};
+	// Test delanuator
+	// x0, y0, x1, y1, ...
+    // std::vector<double> coords = {-1, 1, 1, 1, 1, -1, -1, -1};
 
-    //triangulation happens here
-    delaunator::Delaunator d(coords);
+    // //triangulation happens here
+    // delaunator::Delaunator d(coords);
 
-    for(std::size_t i = 0; i < d.triangles.size(); i+=3) {
-        printf(
-            "Triangle points: [[%f, %f], [%f, %f], [%f, %f]]\n",
-            d.coords[2 * d.triangles[i]],        //tx0
-            d.coords[2 * d.triangles[i] + 1],    //ty0
-            d.coords[2 * d.triangles[i + 1]],    //tx1
-            d.coords[2 * d.triangles[i + 1] + 1],//ty1
-            d.coords[2 * d.triangles[i + 2]],    //tx2
-            d.coords[2 * d.triangles[i + 2] + 1] //ty2
-        );
-    }
+    // for(std::size_t i = 0; i < d.triangles.size(); i+=3) {
+    //     printf(
+    //         "Triangle points: [[%f, %f], [%f, %f], [%f, %f]]\n",
+    //         d.coords[2 * d.triangles[i]],        //tx0
+    //         d.coords[2 * d.triangles[i] + 1],    //ty0
+    //         d.coords[2 * d.triangles[i + 1]],    //tx1
+    //         d.coords[2 * d.triangles[i + 1] + 1],//ty1
+    //         d.coords[2 * d.triangles[i + 2]],    //tx2
+    //         d.coords[2 * d.triangles[i + 2] + 1] //ty2
+    //     );
+    // }
 	
 	try
 	{
